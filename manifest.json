@@ -1,0 +1,19 @@
+{
+    "name": "Minimal Cookie Acceptor",
+    "description": "Accepts the minimum required cookies for a website that is GDPR compliant.",
+    "version": "0.1",
+    "manifest_version": 3,
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "permissions": [
+      "cookies",
+      "webNavigation"
+    ],
+    "host_permissions": [
+      "https://*/",
+      "http://*/"
+    ]
+
+  }
